@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet" media="screen" type="text/css">
+        <link href="/static/css/style.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% if title %}
+            <title>{{ title }} - FriendConnect</title>
+        {% else %}
+            <title>Welcome to FriendConnect</title>
+        {% endif %}
+    </head>
+    <body>
+        {% include "partials/navbar.html" %}
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="container">
+                    {% for message in messages %}
+                        <div class="alert alert-success alert-dismissible" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <span class="sr-only">Info:</span>
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+        <br>
+        <br>
+        <br>
+        <br>
+        <footer class="navbar-default navbar-fixed-bottom">
+            <div class="container-fluid">
+                <ul class="nav navbar-right footer">
+                    <li><a>&copy; 2017 FriendConnect</a></li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+</html>

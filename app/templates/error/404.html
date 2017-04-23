@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+        <div class="container text-center error">
+            <h1>404: File Not Found</h1>
+            <h4>The file you asked for could not be found on our servers! It may either never have existed or might have had its path changed or deleted.</h4>
+            <br>
+            <br>
+            <br>
+            <p>Return to <b><a href="{{ url_for('index') }}">Homepage</a></b>?</p>
+        </div>
+{% endblock %}

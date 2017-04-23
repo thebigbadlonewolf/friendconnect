@@ -1,0 +1,129 @@
+body{
+    background-color: #F7F7F7;
+    color: #1F1F21;
+}
+a:link {
+    text-decoration: none;
+    color: #1F1F21;
+}
+a:visited {
+    text-decoration: none;
+    color: #1F1F21;
+}
+a:hover   {
+    text-decoration: none;
+    color: #1F1F21;
+}
+a:active  {
+    text-decoration: none;
+    color: #1F1F21;
+}
+.navbar{
+    background-color: #4CD964;
+    margin-bottom: 0;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 2px;
+    border-radius: 0;
+}
+.dropdown-menu{
+    background-color: #4CD964;
+    margin-bottom: 0;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 2px;
+    border-radius: 0;
+    padding: 0;
+}
+.dropdown-menu li a{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar li a, .navbar .navbar-brand {
+    color: #FFFFFF !important;
+}
+.navbar-nav li a:hover, .navbar-nav li.active a{
+    color: #4CD964 !important;
+    background-color: #FFFFFF !important;
+}
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #FFFFFF !important;
+}
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #4CD964;
+}
+.post{
+    background-color: #FFFFFF;
+    margin-bottom: 15px;
+    padding: 0;
+}
+.post-header{
+    padding: 15px 15px 0px 15px;
+    border-bottom: 2px solid #F7F7F7;
+}
+.post-caption{
+    padding: 15px 15px 0px 15px;
+    border-bottom: 2px solid #F7F7F7;
+}
+.post-body-image{
+    width: 100%;
+}
+.post-author-image{
+    width: 25px;
+    height: 25px;
+}
+.login{
+    background-color: #FFFFFF;
+    max-width: 420px;
+    padding: 20px;
+}
+.navbar-brand-betalabel{
+    font-size: 10px;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.profile {
+    background-color: #FFFFFF;
+    padding: 15px;
+}
+.profile-image{
+    
+    padding-right: 15px;
+}
+.profile-image-image{
+    width: 100%;
+    border: 2px solid black;
+}
+@media (max-width:767px){
+    .profile-image{
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    .profile-image-image{
+        width: 100%;
+    }
+}
+.footer li a{
+    background-color: #F7F7F7;
+    color: #1F1F21;
+}
+.footer li a:hover{
+    background-color: #F7F7F7;
+    color: #1F1F21;
+}
+textarea {
+    resize: none;
+}
+.error{
+    background-color: #FFFFFF;
+    max-width: 500px;
+    padding: 20px;
+}

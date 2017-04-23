@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block content %}
+    {% if g.user.is_authenticated %}
+        <div class="container-fluid">
+            {% if posts %}
+                {% for post in posts %}
+                    {% include "partials/post.html" %}
+                {% endfor %}
+            {% endif %}
+        </div>
+        {% include "partials/footer.html" %}
+    {% else %}
+        {% include "partials/welcome-static.html" %}
+    {% endif %}
+{% endblock %}

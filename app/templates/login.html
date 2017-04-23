@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container login">
+        <h1 class="text-center">Sign In</h1>
+        <hr>
+        <form action="" method="post" name="login">
+            {{ form.hidden_tag() }}
+            <div class="col-sm-12">
+                <p>{{ form.username(size=64, class_="form-control", placeholder="Username") }}
+                    {% for error in form.username.errors %}
+                        <div class="alert alert-danger" role="alert">
+                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                            <span class="sr-only">Error:</span>
+                            {{ error }}
+                        </div>
+                    {% endfor %}
+                </p>
+            </div>
+            <div class="col-sm-12">
+                <p>{{ form.password(size=80, class_="form-control", placeholder="Password") }}
+                    {% for error in form.password.errors %}
+                        <div class="alert alert-danger" role="alert">
+                            <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                            <span class="sr-only">Error:</span>
+                            {{ error }}
+                        </div>
+                    {% endfor %}
+                </p>
+            </div>
+            <div class="col-sm-12">
+                <p>{{ form.remember_me }} Remember Me
+                <button class="btn btn-default pull-right" type="submit">Send</button></p>
+            </div>
+            <div class="col-sm-12">
+                <br>
+                <p class="text-center">Don't have an account yet? <a href="/signup">Create one!</a></p>
+            </div>
+        </form>
+    </div>
+{% endblock %}

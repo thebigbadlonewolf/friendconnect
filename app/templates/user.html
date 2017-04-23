@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="container-fluid">
+        <div class="container profile">
+            <div class="col-sm-3">
+                <div class="row profile-image">
+                    <img src="{{ user.avatar(256) }}" class="profile-image-image">
+                </div>
+                <div class="row">
+                    &nbsp;
+                </div>
+            </div>
+            <form action="" method="post" name="profile">
+                {% include "partials/" + action + "user.html" %}
+            </form>
+        </div>
+        <br>
+    </div>
+    <div class="container-fluid">
+        {% for post in posts %}
+            {% include "partials/post.html" %}
+        {% endfor %}
+    </div>
+{% endblock %}
